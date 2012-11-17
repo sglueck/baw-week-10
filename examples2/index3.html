@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<style>
+div {
+		padding: 0xp;
+		border: 1px dashed black;
+		margin: 20px;
+}
+
+#parent {
+	background-color: rgb(254, 255, 175);
+	overflow: hidden;  /* Removes collapsed margin from empty parent */
+}
+
+#child1 {
+	background-color: rgb(191, 255, 255);
+	float: left; /* Uncollapse child */
+	clear: both; /* Uncollapse child */
+}
+
+#child2 {
+	background-color: rgb(191, 255, 255);
+	float: left; /* Uncollapse child */
+	clear: both; /* Uncollapse child */
+}
+</style>	
+</head>
+
+<body>
+	<div id="parent">
+
+		<div id="child1">
+			Child 1 Box Lorem ipsum dolor sit amet, consectetuer adipiscing 
+			elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+			dolore magna aliquam erat volutpat. Ut wisi enim ad minim
+			veniam, quis nostrud exerci tation ullamcorper suscipit
+			lobortis nisl ut aliquip ex ea commodo consequat.
+		</div>
+		
+		<div id="child2">
+			Child 2 Box Lorem ipsum dolor sit amet, consectetuer adipiscing 
+			elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+			dolore magna aliquam erat volutpat. Ut wisi enim ad minim
+			veniam, quis nostrud exerci tation ullamcorper suscipit
+			lobortis nisl ut aliquip ex ea commodo consequat.
+		</div>
+	</div>	
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Test Float</title>
+
+<style>
+	/* Natural flow is top to bottom, left to right */
+	div {
+		margin: 10px;
+		height: 100px;
+		width: 100px;
+		font-size: 200%;
+		color: white;
+		background-color: red;
+		}
+	#three {
+		background-color: blue;
+		float: right;  /* Move "three" to the right */
+		}
+	#four {
+		clear: right;
+		}  /* clear: right basically means "Do not put anything on my right" */
+</style>
+
+</head>
+<body>
+	<div id="one">One</div>
+	<div id="two">Two</div>
+	<div id="three">Three</div>
+	<div id="four">Four</div>
+</body>
+</html>

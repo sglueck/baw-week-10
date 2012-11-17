@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<script>
+	// Primitives vs. Objects (They look the same but they are different)
+	// Primitives have a value, but no properties or methods
+	// * All number, string and booean pimitives have a value but have no
+	//   properties or methods
+	// * When accessing a property or calling a method of a primitive, 
+	//   JavaScript 'wraps' the primitive in its counterpart object.
+	// * Once the action has been resolved, the wrapper object is discarded.
+	var number = 145;
+	var number2 = new Number(145);
+	
+	var string='name';
+	var string2 = new String('name');
+	
+	var flag = false;
+	var flag2 = new Boolean(false);
+
+	var a; // declaring a variable
+	a = 10; // setting an initial value
+	a = 'homer'; // setting a new value
+	a = false; // setting a new value
+
+	document.write('<p>This is a '+ typeof a+'.</p>');
+	
+	var a = [blank];
+	document.write('<p>This is a ' + typeof)
+</script>
+
+</body>
+</html>

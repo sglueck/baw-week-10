@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+
+<style>
+div {
+	padding: 30px;
+}
+#orange {
+	width: 300px;
+	background-color: orange;
+}
+#green {
+	background-color: limeGreen;
+}
+#blue {
+	background-color: cyan;
+}
+</style>
+
+<script>
+// Create Alert functions
+function myBlue() {
+	alert("Blue block was clicked");
+}
+
+//Create Alert functions
+function myOrange() {
+	alert("Orange block was clicked");
+}
+
+//Create Alert functions
+function myGreen() {
+	alert("Green block was clicked");
+}
+
+//Bind Click Event Listeners to elements
+function addOrangeClick() {
+                var orange = document.getElementById("orange");
+                orange.addEventListener("click", myOrange, false);
+}
+
+// Bind Click Event Listeners to elements
+function addGreenClick() {
+                var green = document.getElementById("green");
+                green.addEventListener("click", myGreen, false);
+}
+
+function addBlueClick() {
+                var blue = document.getElementById("blue");
+                blue.addEventListener("click", myBlue, false);
+}
+
+// Bind Click Event Listeners to page loading event
+window.addEventListener("load", addOrangeClick, false);
+window.addEventListener("load", addGeenClick, false);
+window.addEventListener("load", addBlueClick, false);
+
+</script>
+
+</head>
+<body>
+
+<div id="orange">
+	<div id="green">
+		<div id="blue">Click here</div>
+	</div>
+</div>
+
+
+</body>
+</html>

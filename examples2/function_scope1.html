@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+
+
+<script>
+// global functions can be called from anywhere
+function globalFunction() {
+	alert ('global function');
+}
+
+function containerFunction() {
+	globalFunction();
+}
+
+function containerFunction2() {
+	// subFunction() is a private function, not global - can't be called outside of
+	// containerFunction2()
+	var subFunction = function() {
+		alert('container subfunction');
+		globalFunction();
+	}
+	subFunction();	
+}
+
+globalFunction();		// Call globalFunction directly
+containerFunction();  	// Call globalFunction from containerFunction
+containerFunction2();	// Call globalFunction in subFunction from containerFunction
+</script>
+
+</head>
+<body>
+
+</body>
+</html>
